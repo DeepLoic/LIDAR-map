@@ -59,6 +59,7 @@ def run():
         value=["gist_earth"],
         options=["gist_earth", "terrain"],
         label="Terrain colormap :",
+        multiple=False,
     )
 
     log_scale_color = checkbox(
