@@ -19,7 +19,7 @@ def run():
     lidar_file = file_input(
         key="lid_file",
         value="",
-        label="LIDAR file",
+        label="LIDAR file :",
         tags=["LAS, LAZ"],
         multiple=False,
     )
@@ -27,7 +27,7 @@ def run():
     resolution = slider(
         key="res_slider",
         value=1.0,
-        label="Grid resolution",
+        label="Grid resolution :",
         min=0.5,
         max=5.0,
         step=0.5,
@@ -38,7 +38,7 @@ def run():
     min_level = slider(
         key="min_level",
         value=-40.,
-        label="Elevation min level",
+        label="Elevation min level :",
         min=-40.,
         max=4000.,
         step=1.,
@@ -46,9 +46,9 @@ def run():
     )
 
     max_level = slider(
-        key="min_level",
+        key="max_level",
         value=4000.,
-        label="Elevation min level",
+        label="Elevation min level :",
         min=-40.,
         max=4000.,
         step=1.,
@@ -57,8 +57,8 @@ def run():
 
     color_map = dropdown(
         key="cmap_dropdown",
-        value=["gist_earth", "terrain"],
-        label="Terrain colormap",
+        value=[["gist_earth"], ["terrain"]],
+        label="Terrain colormap :",
         multiple=False,
     )
 
@@ -92,7 +92,7 @@ def run():
     alpha_isolines = slider(
         key="isolines_slider",
         value=128,
-        label="Alpha isolines",
+        label="Alpha isolines :",
         min=0.0,
         max=255.0,
         step=1.0,
