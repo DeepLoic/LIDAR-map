@@ -89,13 +89,18 @@ def hill_shade(m: np.ndarray, az: float = 30.0, alt: float = 30.0) -> np.ndarray
 
 def draw_colored_map(
     m: np.ndarray,
-    min_level: float,
-    max_level: float,
+    min_level: float = None,
+    max_level: float = None,
     cmap: str = "gist_earth",
     log_scale_color: bool = True,
     shadding: bool = True,
     blend_shadding: float = 0.2
 ) -> Image:
+    if min_level is None:
+        min_level = m.min()
+    if max_level is None:
+        max_level = m.max()
+
     if log_scale_color:
         norm = colors.SymLogNorm(linthresh=100, vmin=min_level, vmax=max_level)
     else:
