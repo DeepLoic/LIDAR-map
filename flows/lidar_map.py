@@ -42,7 +42,6 @@ def run():
         min=-40.,
         max=4000.,
         step=1.,
-        optional=True,
     )
 
     max_level = slider(
