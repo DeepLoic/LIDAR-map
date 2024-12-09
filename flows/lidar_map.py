@@ -20,7 +20,7 @@ def run():
         key="lid_file",
         value="",
         label="LIDAR file :",
-        # tags=["LAS, LAZ"],
+        types=[("LAZ", ".laz")],
         multiple=False,
     )
 
