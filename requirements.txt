@@ -1,5 +1,7 @@
 onecode>=1,<2
-"laspy[lazrs,laszip]"
+laspy
+lazrs
+laszip
 matplotlib
 numpy
 pillow
