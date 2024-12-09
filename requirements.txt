@@ -1,1 +1,7 @@
 onecode>=1,<2
+laspy
+matplotlib
+numpy
+pillow
+scipy
+scikit-image
