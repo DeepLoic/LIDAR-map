@@ -109,9 +109,8 @@ def run():
 
     file_output(
         key="png_output",
-        value=png_file,
-        label="LIDAR map png",
-        tags=["PNG"],
+        value=f"map/{png_file}",
+        make_path=True,
     )
 
     Logger.info(f"=== {png_file} created! ===")
