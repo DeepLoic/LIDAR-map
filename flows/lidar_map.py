@@ -55,10 +55,10 @@ def run():
 
     color_map = dropdown(
         key="cmap_dropdown",
-        value=["gist_earth"],
+        value="gist_earth",
         options=["gist_earth", "terrain"],
         label="Terrain colormap :",
-        # multiple=False,
+        multiple=False,
     )
 
     log_scale_color = checkbox(
