@@ -104,13 +104,14 @@ def run():
             alpha_isolines=int(alpha_isolines),
         )
 
-    png_file = f"{path.splitext(path.basename(lidar_file))[0]}.png"
-    create_map_png(name=png_file, map=map_img, isocontours=iso_img)
-
-    file_output(
-        key="png_output",
-        value=f"map/{png_file}",
-        make_path=True,
+    create_map_png(
+        name=file_output(
+            key="png_output",
+            value="map",
+            # make_path=True,
+        ),
+        map=map_img,
+        isocontours=iso_img
     )
 
-    Logger.info(f"=== {png_file} created! ===")
+    Logger.info("=== map created! ===")

@@ -126,11 +126,11 @@ def create_map_png(name: str, map: Image, isocontours: Image = None):
     if isocontours is not None:
         map.paste(isocontours, (0, 0), isocontours)
 
-    map.save(f"./{name}.png")
+    map.save(f"{name}.png")
 
 
 if __name__ == "__main__":
-    grid = grid_lidar("LHD_FXX_0919_6601_PTS_C_LAMB93_IGN69.copc.laz", resolution=0.5)
+    grid = grid_lidar("flows/LHD_FXX_0617_6364_PTS_C_LAMB93_IGN69.copc.laz", resolution=0.5)
 
     # min_level, max_level = -40., 4000.
     min_level, max_level = grid.min(), grid.max()
