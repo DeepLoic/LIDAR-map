@@ -105,11 +105,12 @@ def run():
         )
 
     create_map_png(
-        name=file_output(
-            key="png_output",
-            value="map",
-            # make_path=True,
-        ),
+        # name=file_output(
+        #     key="png_output",
+        #     value="map",
+        #     # make_path=True,
+        # ),
+        name="outputs/lidar_map/map.png",
         map=map_img,
         isocontours=iso_img
     )
