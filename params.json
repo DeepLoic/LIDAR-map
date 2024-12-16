@@ -1,3 +1,11 @@
 {
-  "lid_file": "LHD_FXX_0617_6364_PTS_C_LAMB93_IGN69.copc.laz"
+    "lid_file": "/home/loic/Téléchargements/uploads_LHD_FXX_0617_6364_PTS_C_LAMB93_IGN69.copc.laz",
+    "res_slider": 1.0,
+    "min_level": -40.0,
+    "max_level": 4000.0,
+    "cmap_dropdown": "gist_earth",
+    "scale_color_checkbox": true,
+    "shadding_checkbox": true,
+    "isocontours_checkbox": true,
+    "isolines_slider": 128.0
 }
