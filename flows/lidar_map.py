@@ -104,12 +104,13 @@ def run():
             alpha_isolines=int(alpha_isolines),
         )
 
+    img_path = file_output(
+        key="png_output",
+        value="map.png"
+    )
+
     create_map_png(
-        name=file_output(
-            key="png_output",
-            value="map",
-            # make_path=True,
-        ),
+        name=path.splitext(img_path)[0],
         map=map_img,
         isocontours=iso_img
     )
